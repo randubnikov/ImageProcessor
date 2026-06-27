@@ -19,7 +19,7 @@ resource "aws_s3_bucket_cors_configuration" "original" {
   }
 }
 
-resource "aws_s3_notification" "trigger_lambda" {
+resource "aws_s3_bucket_notification" "trigger_lambda" {
   bucket = aws_s3_bucket.original.id
 
   lambda_function {

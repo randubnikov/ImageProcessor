@@ -1,0 +1,10 @@
+*.tfstate
+*.tfstate.backup
+.terraform/
+*.tfvars
+__pycache__/
+*.pyc
+.env
+node_modules/
+*.zip
+lambda/package/
